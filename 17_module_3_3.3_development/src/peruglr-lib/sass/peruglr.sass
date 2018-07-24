@@ -1,0 +1,56 @@
+@charset "utf-8"
+
+@import mixin
+
+#peruglr
+  position: absolute
+  +sizeFullWH
+  overflow: hidden
+
+  &.events-none, &.events-none *
+    pointer-events: none
+
+  #preloader
+    width: 30%
+    height: 30%
+    max-width: 130px
+    max-height: 130px
+    +centerXY
+    +crossBrowser(opacity, 0)
+    +crossBrowser(visibility, hidden)
+
+    div
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
+      width: 100%
+      height: 100%
+      display: -ms-flexbox
+      display: -webkit-flex
+      display: flex
+      -ms-flex-align: center
+      -webkit-align-items: center
+
+      span
+        text-align: center
+        display: block
+        width: 100%
+
+  .clear
+    clear: both
+
+  .no-wrap
+    white-space: nowrap
+
+  section.page
+    position: absolute
+    +sizeFullWH
+
+    .sequence-imgs
+      width: inherit
+      height: inherit
+      position: relative
+
+      img
+        width: inherit
+        display: block
