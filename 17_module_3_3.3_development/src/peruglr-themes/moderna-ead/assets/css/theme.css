@@ -388,6 +388,62 @@
         -o-box-sizing: border-box;
         box-sizing: border-box;
         padding-bottom: 50px; }
+      .moderna-ead section.page main .list-cicle li {
+        display: -webkit-box;
+        position: relative;
+        padding: 5px 0 5px 35px; }
+        .moderna-ead section.page main .list-cicle li div {
+          position: absolute;
+          height: 12px !important;
+          width: 12px !important;
+          background-color: #fff;
+          border-radius: 100%;
+          margin: 17px 10px;
+          left: 0; }
+        .moderna-ead section.page main .list-cicle li .click {
+          background-image: url(../img/click.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 35px;
+          height: 35px;
+          display: inline-block;
+          -webkit-transform: translateY(100%);
+              -ms-transform: translateY(100%);
+                  transform: translateY(100%);
+          cursor: pointer; }
+      .moderna-ead section.page main .separator-colum {
+        position: relative; }
+        .moderna-ead section.page main .separator-colum .colum-left {
+          display: inline-block;
+          width: 100%;
+          min-width: 400px;
+          max-width: 46%;
+          margin-right: 55px;
+          float: left; }
+        .moderna-ead section.page main .separator-colum .colum-right {
+          display: inline-block;
+          width: 100%;
+          min-width: 400px;
+          max-width: 45%;
+          float: left; }
+      .moderna-ead section.page main .legend {
+        text-align: center; }
+        .moderna-ead section.page main .legend p {
+          display: inline-block; }
+        .moderna-ead section.page main .legend .click {
+          background-image: url(../img/click.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          margin-left: 10px;
+          -webkit-transform: translateY(35%);
+              -ms-transform: translateY(35%);
+                  transform: translateY(35%);
+          cursor: pointer; }
       .moderna-ead section.page main .content {
         position: absolute; }
         .moderna-ead section.page main .content .scroll {
@@ -532,34 +588,6 @@
             padding: 0; }
         .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text2 .content .scroll p strong {
           color: #EDEB64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text3 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text3 .content .scroll h3 span {
-        color: #edeb64;
-        font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text3 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text3 .content .scroll ul li .circle {
-          height: 15px !important;
-          width: 15px !important;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px 17px; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text4 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text4 .content .scroll h3 span {
-        color: #edeb64;
-        font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text4 .content .scroll ul li {
-        padding: 5px 0;
-        display: -webkit-box; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text4 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
       .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text4 .content .scroll .note::before {
         content: "";
         display: inline-block;
@@ -574,115 +602,13 @@
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         border-bottom: 5px solid #3a2b5e; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text5 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text5 .content .scroll h3 span {
-        color: #edeb64;
-        font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text5 .content .scroll ul li {
-        padding: 5px 0;
-        display: -webkit-box; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text5 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text6 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text6 .content .scroll h4 span {
-        color: #edeb64;
-        font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text6 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text6 .content .scroll ul li div {
-          display: inline-block;
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text7 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text7 .content .scroll h4 span {
-        color: #edeb64;
-        font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text7 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados main .peruglr-carousel-a-leitura-de-livros-ilustrados .carousel-itens ul .carousel-item-text7 .content .scroll ul li div {
-          display: inline-block;
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
     .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 {
       background-image: url(../img/carrosseu-1.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text1 .content .scroll h2 strong {
+      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text2 .content .scroll p strong {
         color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text1 .content .scroll ul {
-        margin-left: 30px; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text1 .content .scroll ul li {
-          display: -webkit-box;
-          padding: 5px 0; }
-          .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text1 .content .scroll ul li div {
-            height: 15px;
-            width: 15px;
-            background-color: #fff;
-            border-radius: 100%;
-            margin: 17px 10px; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text3 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text3 .content .scroll ul li {
-        padding: 5px 0;
-        display: -webkit-box; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text3 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text4 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text4 .content .scroll h2 h4 {
-        font-family: NotoSans-Bold, Arial, Helvetica, sans-serif; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text4 .content .scroll .separator-colum {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text4 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text4 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text5 .content .scroll h2 {
-        padding: 0; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text5 .content .scroll h2 strong {
-          color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text5 .content .scroll h4 {
-        font-family: NotoSans-Bold, Arial, Helvetica, sans-serif; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text5 .content .scroll .separator-colum {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text5 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text5 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
       .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt2 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2 .carousel-itens ul .carousel-item-text6 .content .scroll {
         max-width: 900px;
         margin: auto;
@@ -933,80 +859,6 @@
             padding: 0; }
         .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text2 .scroll p strong {
           color: #EDEB64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text3 .content .scroll .small-text {
-        padding: 0; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text3 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text3 .content .scroll h5 {
-        font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text3 .content .scroll h5 strong {
-          color: #fff; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text3 .content .scroll .separator-colum {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text3 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text3 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text4 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text4 .content .scroll h5 {
-        font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text4 .content .scroll .separator-colum {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text4 .content .scroll ul li {
-        padding: 5px 0;
-        display: -webkit-box; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text4 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text5 .content .scroll h5 {
-        font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text5 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text5 .content .scroll p strong {
-        color: #fff; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text5 .content .scroll .separator-colum {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text5 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text5 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text6 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text6 .content .scroll h4 {
-        font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text6 .content .scroll .separator-colum {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-      .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text6 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text6 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
       .moderna-ead section.page.page-a-leitura-de-livros-ilustrados-pt3 main .peruglr-carousel-a-leitura-de-livros-ilustrados-pt3 .carousel-itens ul .carousel-item-text7 .content .scroll {
         max-width: 900px;
         left: 0;
@@ -1116,24 +968,6 @@
             padding: 0; }
         .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text1 .content .scroll p strong {
           color: #EDEB64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text2 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text2 .content .scroll h3 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text2 .content .scroll ul {
-        width: 80%;
-        margin: auto; }
-        .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text2 .content .scroll ul li {
-          display: -webkit-box;
-          padding: 5px 0; }
-          .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text2 .content .scroll ul li div {
-            height: 15px;
-            width: 15px;
-            background-color: #fff;
-            border-radius: 100%;
-            margin: 7px 10px 7px 0; }
-          .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text2 .content .scroll ul li p {
-            padding: 0px; }
       .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text3 .content .scroll {
         max-width: 650px;
         margin: auto;
@@ -1233,24 +1067,6 @@
             padding: 0; }
         .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text3 .content .scroll p strong {
           color: #EDEB64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text4 .content .scroll h2 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text4 .content .scroll h3 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text4 .content .scroll ul {
-        width: 80%;
-        margin: auto; }
-        .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text4 .content .scroll ul li {
-          display: -webkit-box;
-          padding: 5px 0; }
-          .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text4 .content .scroll ul li div {
-            height: 15px;
-            width: 15px;
-            background-color: #fff;
-            border-radius: 100%;
-            margin: 7px 10px 7px 0; }
-          .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text4 .content .scroll ul li p {
-            padding: 0px; }
       .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text5 .content .scroll {
         max-width: 650px;
         margin: auto;
@@ -1267,7 +1083,7 @@
           background-size: cover;
           width: 107px;
           height: 141px;
-          top: 0;
+          top: 6px;
           margin: auto;
           position: absolute;
           left: 80%;
@@ -1294,7 +1110,7 @@
             background-color: rgba(0, 0, 0, 0.6); }
         .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text5 .content .scroll .content-separator {
           height: 49%;
-          top: 17px;
+          top: 25px;
           width: 5px;
           position: absolute;
           display: inline-block;
@@ -1350,19 +1166,8 @@
             padding: 0; }
         .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text5 .content .scroll p strong {
           color: #EDEB64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text7 .content .scroll h2 strong {
+      .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text7 .content .scroll p em {
         color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text7 .content .scroll h3 strong {
-        color: #edeb64; }
-      .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text7 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px; }
-        .moderna-ead section.page.page-a-leitura-de-livros-album main .peruglr-carousel-a-leitura-de-livros-album .carousel-itens ul .carousel-item-text7 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
     .moderna-ead section.page.page-a-leitura-de-textos-mais-longos {
       background-image: url(../img/a-leitura-de-textos-mais-longos.jpg);
       background-position: center;
@@ -1403,7 +1208,7 @@
           background-size: cover;
           width: 107px;
           height: 141px;
-          top: 6px;
+          top: 20px;
           margin: auto;
           position: absolute;
           left: 61%;
@@ -1435,7 +1240,7 @@
           background-size: cover;
           width: 107px;
           height: 141px;
-          top: 6px;
+          top: 20px;
           margin: auto;
           position: absolute;
           left: 81%;
@@ -1520,16 +1325,7 @@
         .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text2 .content .scroll p strong {
           color: #EDEB64; }
       .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text3 .content .scroll {
-        max-width: 600px; }
-      .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text4 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text4 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
+        max-width: 500px; }
       .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text4 .content .scroll .content-img {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1594,15 +1390,6 @@
             left: 0;
             top: 0;
             background-color: rgba(0, 0, 0, 0.6); }
-      .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text5 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text5 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
       .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text5 .content .scroll .content-img {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1667,37 +1454,6 @@
             left: 0;
             top: 0;
             background-color: rgba(0, 0, 0, 0.6); }
-      .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text6 .content .scroll h4 {
-        font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
-      .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text6 .content .scroll li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text6 .content .scroll li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
-      .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text7 .content .scroll ul {
-        margin-left: 30px; }
-      .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text7 .content .scroll li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text7 .content .scroll li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
-      .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text8 .content .scroll li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-a-leitura-de-textos-mais-longos main .peruglr-carousel-a-leitura-de-textos-mais-longos .carousel-itens ul .carousel-item-text8 .content .scroll li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
     .moderna-ead section.page.page-outras-leituras-de-classicos {
       background-image: url(../img/outras-leituras-de-classicos.jpg);
       background-position: center;
@@ -1821,15 +1577,6 @@
             padding: 0; }
         .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text2 .content .scroll p strong {
           color: #EDEB64; }
-      .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text3 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text3 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
       .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text4 .content .scroll {
         max-width: 650px;
         margin: auto;
@@ -1929,76 +1676,26 @@
             padding: 0; }
         .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text4 .content .scroll p strong {
           color: #EDEB64; }
-      .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text5 .content .scroll {
-        max-width: 950px;
-        left: 0;
-        right: 0;
-        margin: auto; }
-        .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text5 .content .scroll h4 {
-          font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
-        .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text5 .content .scroll ul li {
-          display: -webkit-box;
-          padding: 5px 0; }
-          .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text5 .content .scroll ul li div {
-            height: 15px;
-            width: 15px;
-            background-color: #fff;
-            border-radius: 100%;
-            margin: 17px 10px; }
       .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text6 .content .scroll {
         max-width: 950px;
         left: 0;
         right: 0;
         margin: auto; }
-      .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text7 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text7 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
-      .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text7 .content .scroll h4 {
-        font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
-      .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text8 .content .scroll ul {
-        margin-left: 15px; }
-        .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text8 .content .scroll ul li {
-          display: -webkit-box;
-          padding: 5px 0; }
-          .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text8 .content .scroll ul li div {
-            height: 15px;
-            width: 15px;
-            background-color: #fff;
-            border-radius: 100%;
-            margin: 17px 10px; }
-      .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text8 .content .scroll h4 {
-        font-family: NotoSans-bold, Arial, Helvetica, sans-serif; }
       .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text8 .content .scroll .image {
         background-image: url(../img/mapa.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 185px;
-        height: 94px;
+        width: 265px;
+        height: 134px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
         outline: solid 1px white;
         outline-offset: 5px;
+        margin: 0 0 20px 20px;
         cursor: pointer !important;
-        right: 10px;
-        position: absolute;
-        top: 30px; }
-      .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text9 .content .scroll ul li {
-        display: -webkit-box;
-        padding: 5px 0; }
-        .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text9 .content .scroll ul li div {
-          height: 15px;
-          width: 15px;
-          background-color: #fff;
-          border-radius: 100%;
-          margin: 17px 10px; }
+        display: inline-block; }
       .moderna-ead section.page.page-outras-leituras-de-classicos main .peruglr-carousel-outras-leituras-de-classicos .carousel-itens ul .carousel-item-text10 .content .scroll .box-information {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2042,13 +1739,17 @@
           color: #fff;
           font-size: inherit;
           line-height: inherit; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text3 .content .scroll h4 {
+        padding: 10px 0 25px; }
       .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text3 .content .scroll .content-image {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
         .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text3 .content .scroll .content-image .image1 {
           background-image: url(../img/assim-assado.svg);
           background-position: center;
@@ -2057,6 +1758,7 @@
           width: 184px;
           height: 211px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
@@ -2070,6 +1772,7 @@
           width: 184px;
           height: 211px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
@@ -2083,6 +1786,7 @@
           width: 184px;
           height: 211px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
@@ -2096,18 +1800,23 @@
           width: 184px;
           height: 211px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
           outline-offset: 5px;
           cursor: pointer !important; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text4 .content .scroll h4 {
+        padding: 10px 0 25px; }
       .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text4 .content .scroll .content-image {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
         .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text4 .content .scroll .content-image .image1 {
           background-image: url(../img/historia-engatada.svg);
           background-position: center;
@@ -2116,6 +1825,7 @@
           width: 211px;
           height: 211px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
@@ -2129,6 +1839,7 @@
           width: 211px;
           height: 211px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
@@ -2142,18 +1853,23 @@
           width: 211px;
           height: 211px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
           outline-offset: 5px;
           cursor: pointer !important; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text5 .content .scroll h4 {
+        padding: 10px 0 25px; }
       .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text5 .content .scroll .content-image {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
         .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text5 .content .scroll .content-image .image1 {
           background-image: url(../img/era-uma-vez-um-caracol.svg);
           background-position: center;
@@ -2162,6 +1878,7 @@
           width: 211px;
           height: 211px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
@@ -2175,6 +1892,7 @@
           width: 180px;
           height: 211px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
@@ -2188,11 +1906,14 @@
           width: 170px;
           height: 211px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
           outline-offset: 5px;
           cursor: pointer !important; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text6 .content .scroll h4 {
+        padding: 10px 0 25px; }
       .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text6 .content .scroll .content-image {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2200,7 +1921,9 @@
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
         .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text6 .content .scroll .content-image .image1 {
           background-image: url(../img/enrosca-ou-desenrosca.svg);
           background-position: center;
@@ -2209,6 +1932,7 @@
           width: 180px;
           height: 211px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
@@ -2222,11 +1946,14 @@
           width: 180px;
           height: 211px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
           outline-offset: 5px;
           cursor: pointer !important; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text7 .content .scroll h4 {
+        padding: 10px 0 25px; }
       .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text7 .content .scroll .content-image {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2234,7 +1961,9 @@
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
         .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens ul .carousel-item-text7 .content .scroll .content-image .image1 {
           background-image: url(../img/arara.svg);
           background-position: center;
@@ -2243,6 +1972,7 @@
           width: 180px;
           height: 180px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
@@ -2256,11 +1986,271 @@
           width: 180px;
           height: 180px;
           background-size: 100% 100%;
+          margin-bottom: 20px;
           background-repeat: no-repeat;
           background-position: center;
           outline: solid 1px white;
           outline-offset: 5px;
           cursor: pointer !important; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text8 .content .scroll h4 {
+        padding: 10px 0 25px; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text8 .content .scroll .content-image {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 10px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text8 .content .scroll .content-image .image1 {
+          background-image: url(../img/um-gato.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 180px;
+          height: 180px;
+          background-size: 100% 100%;
+          margin-bottom: 20px;
+          background-repeat: no-repeat;
+          background-position: center;
+          outline: solid 1px white;
+          outline-offset: 5px;
+          cursor: pointer !important; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text9 .content .scroll h4 {
+        padding: 10px 0 25px; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text9 .content .scroll .content-image {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        margin-bottom: 10px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text9 .content .scroll .content-image .image1 {
+          background-image: url(../img/familia.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 163px;
+          height: 202px;
+          background-size: 100% 100%;
+          margin-bottom: 20px;
+          background-repeat: no-repeat;
+          background-position: center;
+          outline: solid 1px white;
+          outline-offset: 5px;
+          cursor: pointer !important; }
+        .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text9 .content .scroll .content-image .image2 {
+          background-image: url(../img/oito-anos.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 163px;
+          height: 202px;
+          background-size: 100% 100%;
+          margin-bottom: 20px;
+          background-repeat: no-repeat;
+          background-position: center;
+          outline: solid 1px white;
+          outline-offset: 5px;
+          cursor: pointer !important; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text10 .content .scroll h3 {
+        padding: 10px 0 25px; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text10 .content .scroll .content-image {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        margin-bottom: 10px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        width: 90%;
+        max-width: 848px;
+        min-width: 100px;
+        margin: auto; }
+        .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text10 .content .scroll .content-image .image1 {
+          background-image: url(../img/boi-boiada.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 280px;
+          min-width: 100px;
+          max-width: 171px;
+          max-height: 618px;
+          min-height: 100px;
+          margin-bottom: 30px;
+          height: 211px;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          outline: solid 1px white;
+          outline-offset: 5px;
+          cursor: pointer !important; }
+        .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text10 .content .scroll .content-image .image2 {
+          background-image: url(../img/toda-crianca-do-mundo.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 280px;
+          min-width: 100px;
+          max-width: 171px;
+          max-height: 618px;
+          min-height: 100px;
+          margin-bottom: 30px;
+          height: 211px;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          outline: solid 1px white;
+          outline-offset: 5px;
+          cursor: pointer !important; }
+        .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text10 .content .scroll .content-image .image3 {
+          background-image: url(../img/poemas-que-escolhi.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 280px;
+          min-width: 100px;
+          max-width: 171px;
+          max-height: 618px;
+          min-height: 100px;
+          margin-bottom: 30px;
+          height: 211px;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          outline: solid 1px white;
+          outline-offset: 5px;
+          cursor: pointer !important; }
+        .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text10 .content .scroll .content-image .image4 {
+          background-image: url(../img/classificados-poeticos.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 280px;
+          min-width: 100px;
+          max-width: 171px;
+          max-height: 618px;
+          min-height: 100px;
+          margin-bottom: 30px;
+          height: 211px;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          outline: solid 1px white;
+          outline-offset: 5px;
+          cursor: pointer !important; }
+        .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text10 .content .scroll .content-image .image5 {
+          background-image: url(../img/namorinho-de-portao.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 280px;
+          min-width: 100px;
+          max-width: 171px;
+          max-height: 618px;
+          min-height: 100px;
+          margin-bottom: 30px;
+          height: 211px;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          outline: solid 1px white;
+          outline-offset: 5px;
+          cursor: pointer !important; }
+        .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text10 .content .scroll .content-image .image6 {
+          background-image: url(../img/exercicio-de-ser-crianca.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 280px;
+          min-width: 100px;
+          max-width: 171px;
+          max-height: 618px;
+          min-height: 100px;
+          margin-bottom: 30px;
+          height: 211px;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          outline: solid 1px white;
+          outline-offset: 5px;
+          cursor: pointer !important; }
+        .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text10 .content .scroll .content-image .image7 {
+          background-image: url(../img/o-fazedor-de-amanhecer.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 280px;
+          min-width: 100px;
+          max-width: 171px;
+          max-height: 618px;
+          min-height: 100px;
+          margin-bottom: 30px;
+          height: 211px;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          outline: solid 1px white;
+          outline-offset: 5px;
+          cursor: pointer !important; }
+        .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text10 .content .scroll .content-image .image8 {
+          background-image: url(../img/e-isso-ali.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 280px;
+          min-width: 100px;
+          max-width: 171px;
+          max-height: 618px;
+          min-height: 100px;
+          margin-bottom: 30px;
+          height: 211px;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          outline: solid 1px white;
+          outline-offset: 5px;
+          cursor: pointer !important; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text11 .content .scroll h4 {
+        padding: 10px 0 25px; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text11 .content .scroll .content-image {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        margin-bottom: 10px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        width: 90%;
+        max-width: 848px;
+        min-width: 100px;
+        margin: auto; }
+        .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text11 .content .scroll .content-image .image1 {
+          background-image: url(../img/a-menina-dos-sonhos.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 280px;
+          min-width: 100px;
+          max-width: 175px;
+          margin-bottom: 20px;
+          height: 253px;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          outline: solid 1px white;
+          outline-offset: 5px;
+          cursor: pointer !important; }
+      .moderna-ead section.page.page-a-leitura-de-poesia main .peruglr-carousel-a-leitura-de-poesia .carousel-itens .carousel-item-text12 .content .scroll .box-content {
+        border: 2px solid #ffffff;
+        padding: 0 15px; }
 
 .btn-detail {
   border: #fff solid 1px;
@@ -2329,16 +2319,93 @@
     max-width: 65%; }
   .peruglr-overlay .img-text4 {
     max-width: 50%; }
-  .peruglr-overlay .img-overlay {
-    background: transparent;
-    outline: none; }
-    .peruglr-overlay .img-overlay img {
+  .peruglr-overlay .overlay-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%; }
+    .peruglr-overlay .overlay-img .vertical-align {
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: flex;
+      -ms-flex-align: center;
+      -webkit-box-align: center;
+      align-items: center;
       margin: auto;
-      position: absolute;
-      left: 0;
-      right: 0;
       top: 0;
-      bottom: 0; }
+      bottom: 0;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+    .peruglr-overlay .overlay-img .scroll {
+      position: absolute;
+      width: 100%;
+      max-height: 90%; }
+      .peruglr-overlay .overlay-img .scroll .mCustomScrollBox {
+        padding: 0 20px; }
+        .peruglr-overlay .overlay-img .scroll .mCustomScrollBox .mCSB_container {
+          margin: 0; }
+    .peruglr-overlay .overlay-img .block-text {
+      width: 65%;
+      height: 160px;
+      display: inline-block; }
+    .peruglr-overlay .overlay-img .image {
+      background-image: url(../img/cinderela-das-bonecas.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 96px;
+      height: 147px;
+      top: 55px;
+      position: absolute;
+      left: 78%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      outline: solid 1px white;
+      outline-offset: 5px;
+      cursor: pointer !important; }
+    .peruglr-overlay .overlay-img .content-separator {
+      height: 31%;
+      width: 5px;
+      top: 77px;
+      position: absolute;
+      display: inline-block;
+      left: 70%; }
+      .peruglr-overlay .overlay-img .content-separator div {
+        position: relative;
+        height: 50%;
+        border-right: 1px solid white;
+        margin-right: 4px; }
+      .peruglr-overlay .overlay-img .content-separator .separator-top {
+        margin-bottom: 13px;
+        margin-top: -13px; }
+        .peruglr-overlay .overlay-img .content-separator .separator-top:after {
+          content: '';
+          height: 10px;
+          border-right: 1px solid white;
+          -webkit-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
+          display: block;
+          position: absolute;
+          bottom: -8px;
+          left: 3.25px; }
+      .peruglr-overlay .overlay-img .content-separator .separator-bottom:before {
+        content: '';
+        height: 10px;
+        border-right: 1px solid white;
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        display: block;
+        position: absolute;
+        left: 3.25px;
+        top: -8px; }
   .peruglr-overlay .size-small {
     width: 17%;
     background: transparent;
@@ -2379,111 +2446,6 @@
         display: inline;
         position: absolute;
         padding: 0 10px 10px; }
-  .peruglr-overlay .text3 {
-    width: 80%;
-    max-width: 1200px; }
-    .peruglr-overlay .text3 ul li {
-      list-style: none;
-      position: relative;
-      height: 30px; }
-      .peruglr-overlay .text3 ul li .list-border-radius {
-        width: 8px;
-        height: 8px;
-        border: 1px solid #000;
-        border-radius: 8px;
-        position: relative;
-        background-color: #000;
-        display: inline-block; }
-        .peruglr-overlay .text3 ul li .list-border-radius:after {
-          content: "";
-          width: 15px;
-          height: 15px;
-          border-radius: 100%;
-          border: 1px solid #000;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin-right: -50%;
-          -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-                  transform: translate(-50%, -50%); }
-      .peruglr-overlay .text3 ul li .position-inline {
-        display: inline;
-        position: absolute;
-        padding: 0 10px 10px; }
-  .peruglr-overlay .dica {
-    max-width: 30%; }
-    .peruglr-overlay .dica h2 {
-      color: #000;
-      font-size: 26px; }
-  .peruglr-overlay .size-img {
-    width: 25%;
-    background: transparent;
-    text-align: center;
-      text-align-font-size: 30px; }
-    .peruglr-overlay .size-img:before {
-      display: none; }
-    .peruglr-overlay .size-img p {
-      color: #fff; }
-  .peruglr-overlay .size-large {
-    max-width: 80%; }
-    .peruglr-overlay .size-large:before {
-      display: none; }
-  .peruglr-overlay .text-quote {
-    font-size: 65px; }
-  .peruglr-overlay div {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background: #ddd;
-    width: 70%;
-    margin: auto;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    max-width: 50%; }
-  .peruglr-overlay > div {
-    outline: 1px solid #ddd;
-    outline-offset: 5px; }
-    .peruglr-overlay > div:before {
-      border: 1px solid;
-      width: calc(100% + 10px);
-      height: calc(100% + 10px);
-      position: absolute;
-      top: -5px;
-      left: -5px; }
-    .peruglr-overlay > div p {
-      color: #000; }
-    .peruglr-overlay > div .source {
-      float: right; }
-    .peruglr-overlay > div ul {
-      padding: 20px; }
-      .peruglr-overlay > div ul li {
-        list-style-type: circle;
-        color: #000; }
-      .peruglr-overlay > div ul li.list-border-radiu {
-        width: 3px;
-        height: 3px;
-        border: 1px solid #000;
-        border-radius: 8px;
-        position: relative;
-        background-color: #000;
-        display: inline-block; }
-        .peruglr-overlay > div ul li.list-border-radiu:after {
-          content: " ";
-          width: 10px;
-          height: 10px;
-          border-radius: 100%;
-          border: 1px solid #000;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin-right: -50%;
-          -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-                  transform: translate(-50%, -50%); }
   .peruglr-overlay .btn-close {
     outline: 0px;
     left: initial;

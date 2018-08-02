@@ -1,0 +1,12 @@
+﻿<header>
+    <div class="favicon"></div>
+    <div class="course-info">
+        <p><strong>Curso:</strong> <span class="course-title"></span></p>
+        <p><strong>Módulo:</strong> <span class="chapter-title"></span>, <strong>Página:</strong> <span class="page-title"></span></p>
+    </div>
+</header>
+
+<script>
+peruglr.getCourseTitle({ holder:'.peruglr-include-header header .course-info p span.course-title' });
+peruglr.getChapterTitle({ holder:'.peruglr-include-header header .course-info p span.chapter-title' });
+</script>

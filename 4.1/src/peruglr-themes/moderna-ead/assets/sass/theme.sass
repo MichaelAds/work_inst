@@ -1,0 +1,2147 @@
+@charset "utf-8"
+
+@import animate
+@import mixin
+
++webfont(NotoSans-Black)
++webfont(NotoSans-BlackItalic)
++webfont(NotoSans-Light)
++webfont(NotoSans-LightItalic)
++webfont(NotoSans-Medium)
++webfont(NotoSans-MediumItalic)
+
+.moderna-ead
+  background-color: #000
+
+  *
+    +crossBrowser(touch-callout, none)
+    +crossBrowser(user-select, none)
+    +crossBrowser(user-drag, none)
+    font-family: NotoSans-Light, Arial, Helvetica, sans-serif
+    font-size: 18px
+    line-height: 28px
+    color: #fff
+
+  strong
+    font-family: NotoSans-Medium, Arial, Helvetica, sans-serif 
+
+    em
+      font-family: NotoSans-MediumItalic, Arial, Helvetica, sans-serif
+
+  em
+    font-family: NotoSans-LightItalic, Arial, Helvetica, sans-serif
+  
+
+  .btn, .btn *
+    position: relative
+    cursor: pointer
+
+    &:active
+      +crossBrowser(transform, scale(0.9) !important)
+
+    &.btn-blocked
+      pointer-events: none !important
+      +crossBrowser(opacity, 0.3)
+
+    &.btn-close
+      position: absolute
+      width: 32px
+      height: 32px
+      background: transparent !important
+      padding: 0
+
+      span:nth-child(1), span:nth-child(2)
+        display: block
+        position: absolute
+        background-color: #fff
+        width: 3px
+        height: 30px
+        left: 14px
+
+      span:nth-child(1)
+        +crossBrowser(transform, rotate(45deg) !important)
+
+      span:nth-child(2)
+        +crossBrowser(transform, rotate(-45deg) !important)
+
+      &:active
+
+        span:nth-child(1), span:nth-child(2)
+          background-color: #f00
+
+  span.line-space
+    display: block
+    height: 10px
+
+  .ease, .ease *
+    +crossBrowser(transition, all 0.2s ease-in-out)
+
+  .no-ease, .no-ease *
+    +crossBrowser(transition, none !important)
+
+  .vertical-align
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -ms-flex-align: center
+    -webkit-align-items: center
+    -webkit-box-align: center
+    align-items: center
+    margin: auto
+    top: 0
+    bottom: 0
+    width: 100%
+    +crossBrowser(box-sizing, border-box)
+
+  .peruglr-include-header
+    position: absolute
+    z-index: 99
+    background-color: rgba(0,0,0,0.5)
+    width: 100%
+    top: -25%
+
+    header
+
+      .favicon
+        +background('favicon.png')
+        background-size: contain
+        width: 45px
+        height: 40px
+        float: left
+        margin: 7px 15px
+
+      .course-info
+        padding: 7px 5% 7px 0
+        float: left
+
+        p
+          font-size: 14px
+          line-height: 20px
+
+          strong, span
+            font-size: inherit
+            line-height: inherit
+
+          span
+            color: #EDEB64
+
+  .peruglr-include-footer
+    position: absolute
+    bottom: -20%
+    width: 100%
+    height: 10%
+    z-index: 99
+    min-height: 60px
+
+    footer
+
+      .notes
+        display: none
+        position: absolute
+        width: 0
+        height: 120px
+        z-index: 99
+        bottom: 0
+        
+        .btn-notes
+          +background('btn-icon-notes.png')
+          background-size: contain
+          width: 40px
+          height: 32px
+          position: absolute
+          bottom: 10px
+          left: 20px
+
+          i
+            background-color: #f00
+            display: block
+            position: absolute
+            width: 10px
+            height: 10px
+            border-radius: 100px
+            bottom: -3px
+            right: 4px
+            +crossBrowser(opacity, 0)
+            visibility: hidden
+
+        form
+          position: absolute
+          width: 100%
+          height: 100%
+          background: rgba(0, 0, 0, 0.5)
+          +crossBrowser(box-sizing, border-box)
+          padding: 10px 120px 10px 71px
+          bottom: -100%
+
+          textarea
+            width: 100%
+            background: rgba(0,0,0,0.8)
+            border: 1px solid rgba(255,255,255,0.8)
+            height: 100%
+            +crossBrowser(box-sizing, border-box)
+            resize: none
+            padding: 5px 10px
+            display: block
+            max-width: 1100px
+            margin: auto
+
+          .btn-submit
+            position: absolute
+            right: 20px
+            background-color: #fff
+            color: #000
+            text-transform: uppercase
+            font-family: NotoSans-Medium, Arial, Helvetica, sans-serif
+            width: 80px
+            text-align: center
+            line-height: 40px
+            bottom: 10px
+
+            &:active
+              background-color: #EDEB64
+
+          .btn-close
+            right: 16px
+            top: 7px
+
+      .peruglr-navigation
+        text-align: center
+
+        .btn
+          position: relative
+          overflow: hidden
+          display: inline-block
+          margin: 0 5px
+
+          i
+            position: absolute
+            width: 100px
+            height: 100px
+            display: block
+            border: 2px solid #fff
+            +crossBrowser(transform, rotate(45deg) !important)
+
+          p
+            display: none
+
+          &.btn-prev-page
+            width: 54px
+            height: 40px
+            border-bottom: 2px solid #fff
+
+            i
+              top: 35px
+              left: -25px
+
+          &.btn-next-page
+            width: 82px
+            height: 40px
+            border-top: 2px solid #fff
+            top: 10px
+
+            i
+              top: -85px
+              left: -11px
+
+  section.page
+    +crossBrowser(opacity, 0)
+    visibility: hidden
+    top: -200%
+    padding-left: 5%
+    padding-right: 5%
+    +crossBrowser(box-sizing, border-box)
+    .text-quote
+      font-size: 65px
+    p.credits
+      float: right
+      font-size: 15px
+      color: #000
+    .font-large
+      font-family: NotoSans-Medium, Arial, Helvetica, sans-serif
+      font-size: 23px
+      line-height: 36px
+    sup
+      vertical-align: super
+      font-size: smaller
+    .small-text
+      font-size: 14px
+      line-height: 24px
+      color: #EDEB64
+
+    h1
+      font-family: NotoSans-Black, Arial, Helvetica, sans-serif
+      
+      font-size: 80px
+      line-height: 100px
+      text-align: center
+      padding: 10px 0
+
+      span
+        font-family: inherit
+        color: #EDEB64
+        font-size: inherit
+
+    h2  
+      font-family: NotoSans-Black, Arial, Helvetica, sans-serif
+      font-size: 40px
+      line-height: 50px
+      padding: 10px 0
+      span, strong
+        font-family: inherit
+        color: #EDEB64
+        font-size: inherit
+
+    h3
+      font-family: NotoSans-Black, Arial, Helvetica, sans-serif
+      font-size: 30px
+      line-height: 40px
+      padding: 10px 0
+      span, strong
+        font-family: inherit
+        color: #EDEB64
+        font-size: inherit
+    h4
+      font-family: NotoSans-Black, Arial, Helvetica, sans-serif
+      font-size: 25px
+      line-height: 35px
+      padding: 10px 0
+      span, strong
+        font-family: inherit
+        color: #EDEB64
+        font-size: inherit
+
+    h5
+      font-family: NotoSans-Black, Arial, Helvetica, sans-serif
+      font-size: 20px
+      line-height: 30px
+      padding: 10px 0
+      span, strong
+        font-family: inherit
+        color: #EDEB64
+        font-size: inherit
+    p
+      padding: 10px 0
+
+    .left
+      width: 47.17%
+      border-top: 1px solid #fff
+      position: relative
+      transform: scaleX(-1)
+      .center-right
+        border-top: 1px solid #fff
+        transform: rotate(135deg)
+        transform-origin: 0% 
+        width: 10%
+    
+    .right
+      width: 47.15%
+      border-top: 1px solid #fff
+      float: right
+      margin: -2px
+      .center-left
+        border-top: 1px solid #fff
+        transform: rotate(135deg)
+        transform-origin: 0% 
+        width: 10%
+
+    main
+      .carousel-itens
+        .vertical-align
+          display: -ms-flexbox
+          display: -webkit-flex
+          display: flex
+          -ms-flex-align: center
+          -webkit-align-items: center
+          -webkit-box-align: center
+          align-items: center
+          margin: auto
+          top: 0
+          bottom: 0
+          width: 100%
+          +crossBrowser(box-sizing, border-box)
+          padding-bottom: 50px 
+
+      .box-content
+        border: 2px solid #ffffff
+        padding: 0px 15px
+
+      
+
+      width: 100%
+      height: 100%
+      position: relative
+      overflow: hidden
+      max-width: 1200px
+      margin: auto
+
+      .sub-title
+        font-size: 21px
+        line-height: 31px
+        strong
+          color: #EDEB64
+          font-size: inherit
+
+      .list-cicle
+        li
+          display: -webkit-box
+          position: relative
+          padding: 5px 0 5px 35px
+          div
+            position: absolute
+            height: 12px !important
+            width: 12px !important
+            background-color: #fff
+            border-radius: 100%
+            margin: 17px 10px 
+            left: 0 
+
+          .click
+            +background('click.svg')
+            width: 35px
+            height: 35px
+            display: inline-block
+       
+            transform: translateY(100%)
+            cursor: pointer
+
+      .click
+        +background('click.svg')
+        width: 35px
+        height: 35px
+         cursor: pointer
+      .content-colum
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        .box-content
+          width: 28%
+          min-width: 240px
+          margin-top: 20px
+          p
+            font-size: 14px
+            line-height: 24px
+            padding-left: 20px
+            &:nth-child(2)
+              padding-top: 0 
+          .sub-title
+            font-size: 17px
+            line-height: 27px
+            padding: 10px 0 0
+            strong
+              color: #fff
+
+      .separator-colum
+        position: relative
+        .colum-left
+          display: inline-block
+          width: 100%
+          min-width: 400px
+          max-width: 46%
+          margin-right: 55px
+          float: left
+
+        .colum-right
+          display: inline-block
+          width: 100%
+          min-width: 400px
+          max-width: 45%
+          float: left
+
+      .legend
+        text-align: center
+        p
+          display: inline-block
+
+    
+
+      .content
+        position: absolute
+
+        .scroll
+          position: absolute
+          width: 100%
+          max-height: 90%
+          
+
+          .mCustomScrollBox
+            padding: 0 20px
+
+            .mCSB_container
+              margin: 0
+
+
+    // Cover Page
+    &.cover-page
+      +background('capa.jpg')
+      background-position: top
+
+      main
+        +crossBrowser(opacity, 0)
+        +crossBrowser(transform, scale(2))
+
+
+        
+
+    &.page-introducao
+      +background('introducao.jpg')
+      main
+        .peruglr-carousel-introducao       
+          .carousel-itens
+            ul
+
+            
+    
+
+    &.page-preencher-as-lacunas-para-criar-sentido
+      +background('preencher-as-lacunas-para-criar-sentido.jpg')
+      main 
+        .peruglr-carousel-preencher-as-lacunas-para-criar-sentido    
+          .carousel-itens
+            ul
+
+              .carousel-item-text1
+                .content
+                  .scroll
+                    .colum-separator
+                      display: flex
+                      justify-content: space-between
+                      .box-content
+
+                        .image
+                          
+                          width: 179px
+                          height: 241px
+                          +background('pippi.png')
+            
+              
+              .carousel-item-text4
+                .content
+                  .scroll
+                    .box-featured
+                      background-color: #fff
+                      padding: 0 12px
+                      width: 50%
+                      margin: 20px auto
+                      p
+                        color: #4A357E
+                    
+
+              
+    &.page-de-que-voce-precisa-para-organizar-um-projeto
+      +background('de-que-voce-precisa-para-organizar-um-projeto.jpg')
+      main
+        .peruglr-carousel-de-que-voce-precisa-para-organizar-um-projeto
+          .carousel-itens
+            ul
+              
+              .carousel-item-text1
+                .content
+                  .scroll
+                    .align-box
+                      display: flex
+                      flex-wrap: wrap
+                      justify-content: space-between        
+                      .box-content
+                        padding: 0 20px
+                        margin-top: 20px
+                        width: 44%
+                        .list-cicle
+                          li
+                            padding: 5px 0 5px 20px
+                            div
+                              margin: 17px 0
+
+
+                   
+
+            
+    &.page-seis-estrategias-de-leitura-para-aprender-e-ensinar
+      +background('seis-estrategias-de-leitura-para-aprender-e-ensinar.jpg')
+      main
+        .peruglr-carousel-seis-estrategias-de-leitura-para-aprender-e-ensinar
+          .carousel-itens
+            ul
+              .carousel-item-text1
+                .content
+                  .scroll
+                    
+                      
+
+
+    &.page-a-concretizacao
+      +background('a-concretizacao.jpg')
+      main
+        .peruglr-carousel-a-concretizacao
+          .carousel-itens
+            ul
+              .carousel-item-text1
+                .content
+                  .scroll
+                    .separator-colum
+                      display: flex
+                      justify-content: space-between
+                   
+
+    &.page-as-personagens
+      +background('as-personagens.jpg')
+      main
+        .peruglr-carousel-as-personagens
+          .carousel-itens
+            ul
+              .carousel-item-text1
+                .content
+                  .scroll  
+                   
+
+
+             
+
+
+    &.page-outras-leituras-de-classicos
+      +background('outras-leituras-de-classicos.jpg')
+      main
+        .peruglr-carousel-outras-leituras-de-classicos
+          .carousel-itens
+            ul
+              .carousel-item-text1
+                .content
+                  .scroll 
+                    max-width: 950px
+                    margin: auto
+                    left: 0
+                    right: 0
+
+                    
+                    .note::before
+                      content: ""
+                      display: inline-block
+                      vertical-align: middle
+                      top: -8px
+                      position: absolute
+                      margin-right: 10px
+                      width: 1px
+                      height: 18px 
+                      background-color:#fff
+                      z-index: 1
+                      border-left: 5px solid transparent
+                      border-right: 5px solid transparent
+                      border-bottom: 5px solid #3f124e
+
+
+              .carousel-item-text2
+                .content
+                  .scroll       
+                    max-width: 650px
+                    margin: auto
+                    left: 0
+                    right: 0
+                    .block-text
+                      width: 65%
+                      height: 150px
+                      display: inline-block
+                    .content-image
+
+                      .image
+                        +background('peter-pan.svg')
+                        width: 121px
+                        height: 146px
+                        top: 55px
+               
+                        position: absolute
+                        left: 78%
+                        background-size: 100% 100%
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)    
+                                        
+                      .subtitle
+
+                    .content-separator
+                      height: 29%
+                      width: 5px
+                      top: 77px
+                      position: absolute
+                      display: inline-block 
+                      left: 70%
+
+                      div
+                        position: relative
+                        height: 50%
+                        border-right: 1px solid white
+                        margin-right: 4px
+
+                      .separator-top
+                        margin-bottom: 13px
+                        margin-top: -13px
+
+                        &:after
+                          content: ''
+                          height: 10px
+                          border-right: 1px solid white
+                          transform: rotate(-45deg)
+                          display: block
+                          position: absolute
+                          bottom: -8px
+                          left: 3.25px
+
+                      .separator-bottom
+
+                          &:before
+                            content: ''
+                            height: 10px
+                            border-right: 1px solid white
+                            transform: rotate(45deg)
+                            display: block
+                            position: absolute
+                            left: 3.25px
+                            top: -8px
+                    
+                    h2
+                      
+                      width: 63%
+                      color: #edeb64
+                      font-size: 35px
+                      line-height: 45px
+
+                      span.title
+                        color: #edeb64
+                        font-size: 25px
+                        font-weight: 600
+
+                      span.yellow
+                        font-family: inherit
+                        color: #EDEB64
+                        font-size: inherit
+                    .border-box
+                      margin-top: 25px
+                      border: 1px solid #fff
+                      padding: 10px
+                      p
+                        width: 100%
+                        padding: 0
+                    p
+                      strong
+                        color: #EDEB64
+
+
+              .carousel-item-text4
+                .content
+                  .scroll       
+                    max-width: 650px
+                    margin: auto
+                    left: 0
+                    right: 0
+                    .block-text
+                      width: 65%
+                      height: 150px
+                      display: inline-block
+                    .content-image
+
+                      .image
+                        +background('peter-pan-book.svg')
+                        width: 96px
+                        height: 147px
+                        top: 55px
+               
+                        position: absolute
+                        left: 78%
+                        background-size: 100% 100%
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)    
+                                        
+                      .subtitle
+
+                    .content-separator
+                      height: 31%
+                      width: 5px
+                      top: 77px
+                      position: absolute
+                      display: inline-block 
+                      left: 70%
+
+                      div
+                        position: relative
+                        height: 50%
+                        border-right: 1px solid white
+                        margin-right: 4px
+
+                      .separator-top
+                        margin-bottom: 13px
+                        margin-top: -13px
+
+                        &:after
+                          content: ''
+                          height: 10px
+                          border-right: 1px solid white
+                          transform: rotate(-45deg)
+                          display: block
+                          position: absolute
+                          bottom: -8px
+                          left: 3.25px
+
+                      .separator-bottom
+
+                          &:before
+                            content: ''
+                            height: 10px
+                            border-right: 1px solid white
+                            transform: rotate(45deg)
+                            display: block
+                            position: absolute
+                            left: 3.25px
+                            top: -8px
+                    
+                    h2
+                      
+                      width: 63%
+                      color: #edeb64
+                      font-size: 35px
+                      line-height: 45px
+
+                      span.title
+                        color: #edeb64
+                        font-size: 25px
+                        font-weight: 600
+
+                      span.yellow
+                        font-family: inherit
+                        color: #EDEB64
+                        font-size: inherit
+                    .border-box
+                      margin-top: 25px
+                      border: 1px solid #fff
+                      padding: 10px
+                      p
+                        width: 100%
+                        padding: 0
+                    p
+                      strong
+                        color: #EDEB64
+              
+
+              .carousel-item-text6
+                .content
+                  .scroll  
+                    max-width: 950px
+                    left: 0
+                    right: 0
+                    margin: auto
+
+  
+
+              .carousel-item-text8
+                .content
+                  .scroll  
+                     
+                    
+                    .image
+                      +background('mapa.svg')
+                      width: 265px
+                      height: 134px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      margin: 0 0 20px 20px
+                      cursor: pointer !important
+                      display: inline-block
+                      &:hover:before, &:hover:before
+                        content: ''
+                        +background('lupa.png')
+                        background-size: 40px 40px
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
+                        postion: absolute
+                        left: 0
+                        top: 0
+                        background-color: rgba(0,0,0,0.6)
+
+
+            
+                     
+
+              .carousel-item-text10
+                .content
+                  .scroll       
+                    .box-information
+                      display: flex
+                      justify-content: space-around
+                      flex-wrap: wrap
+
+                      .box-contain
+                        width: 40%  
+                        background: #fff
+                        padding: 0 12px
+                        outline: 1px solid #ffffff
+                        outline-offset: 10px
+                        margin: 35px 0
+                        position: relative
+                        p
+                          color: #000
+                        .number
+                          height: 30px
+                          width: 30px
+                          border: 2px solid #fff
+                          border-radius: 100%
+                          position: absolute
+                          top: -25px
+                          left: -25px
+                          background-color: #3C1F6F
+                          p
+
+                            padding: 0
+                            color: #fff
+                            text-align: center
+                        
+                      
+    &.page-a-leitura-de-poesia
+      +background('a-leitura-de-poesia.jpg')
+      main
+        .peruglr-carousel-a-leitura-de-poesia
+          .carousel-itens
+            ul
+              .carousel-item-text1
+                .content
+                  .scroll 
+                    .source
+                      font-size: 12px
+                      line-height: 22px
+                      strong
+                        color: #fff
+                        font-size: inherit
+                        line-height: inherit
+                      
+
+                    
+              .carousel-item-text3
+                .content
+                  .scroll 
+                    p
+                      padding: 10px 0 25px
+                    .content-image
+                      display: flex
+                      justify-content: space-around
+                      margin-bottom: 10px
+                      flex-wrap: wrap
+                      .image1
+                        +background('assim-assado.svg')
+                        width: 184px
+                        height: 211px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+                      
+                      .image2
+                        +background('nao-confunda.svg')
+                        width: 184px
+                        height: 211px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+
+                      .image3
+                        +background('travadinhas.svg')
+                        width: 184px
+                        height: 211px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+
+                      .image4
+                        +background('zig-zag.svg')
+                        width: 184px
+                        height: 211px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+
+
+
+
+              .carousel-item-text4
+                .content
+                  .scroll 
+                    p
+                      padding: 10px 0 25px
+                    .content-image
+                      display: flex
+                      justify-content: space-around
+                      margin-bottom: 10px
+                      flex-wrap: wrap
+                      .image1
+                        +background('historia-engatada.svg')
+                        width: 211px
+                        height: 211px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+                      
+                      .image2
+                        +background('historia-vira-lata.svg')
+                        width: 211px
+                        height: 211px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+
+                      .image3
+                        +background('historia-enroscada.svg')
+                        width: 211px
+                        height: 211px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+
+
+              .carousel-item-text5
+                .content
+                  .scroll 
+                    p
+                      padding: 10px 0 25px
+                    .content-image
+                      display: flex
+                      justify-content: space-around
+                      margin-bottom: 10px
+                      flex-wrap: wrap
+                      .image1
+                        +background('era-uma-vez-um-caracol.svg')
+                        width: 211px
+                        height: 211px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+                      
+                      .image2
+                        +background('formiga-amiga.svg')
+                        width: 180px
+                        height: 211px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+
+                      .image3
+                        +background('palavras.svg')
+                        width: 170px
+                        height: 211px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+
+              .carousel-item-text6  
+                .content
+                  .scroll 
+                    p
+                      padding: 10px 0 25px
+                    .content-image
+                      display: flex
+                      justify-content: space-evenly
+                      margin-bottom: 10px
+                      flex-wrap: wrap
+                      .image1
+                        +background('enrosca-ou-desenrosca.svg')
+                        width: 180px
+                        height: 211px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+                      
+                      .image2
+                        +background('cancoes.svg')
+                        width: 180px
+                        height: 211px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+
+              .carousel-item-text7
+                .content
+                  .scroll 
+                    p
+                      padding: 10px 0 25px
+                    .content-image
+                      display: flex
+                      justify-content: space-evenly
+                      margin-bottom: 10px
+                      flex-wrap: wrap
+                      .image1
+                        +background('arara.svg')
+                        width: 180px
+                        height: 180px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+                      
+                      .image2
+                        +background('manos.svg')
+                        width: 180px
+                        height: 180px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+
+            .carousel-item-text8
+                .content
+                  .scroll 
+                    p
+                      padding: 10px 0 25px
+                    .content-image
+                      display: flex
+                      justify-content: center
+                      margin-bottom: 10px
+                      flex-wrap: wrap
+                      .image1
+                        +background('um-gato.svg')
+                        width: 180px
+                        height: 180px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                        &:hover:before, &:hover:before
+                          content: ''
+                          +background('lupa.png')
+                          background-size: 40px 40px
+                          z-index: 1
+                          display: block
+                          width: 100%
+                          height: 100%
+                          postion: absolute
+                          left: 0
+                          top: 0
+                          background-color: rgba(0,0,0,0.6)
+                      
+            .carousel-item-text9
+              .content
+                .scroll 
+                  p
+                    padding: 10px 0 25px
+                  .content-image
+                    display: flex
+                    justify-content: space-evenly
+                    margin-bottom: 10px
+                    flex-wrap: wrap
+                    .image1
+                      +background('familia.svg')
+                      width: 163px
+                      height: 202px
+                      background-size: 100% 100%
+                      margin-bottom: 20px
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                      &:hover:before, &:hover:before
+                        content: ''
+                        +background('lupa.png')
+                        background-size: 40px 40px
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
+                        postion: absolute
+                        left: 0
+                        top: 0
+                        background-color: rgba(0,0,0,0.6)
+                    
+                    .image2
+                      +background('oito-anos.svg')
+                      width: 163px
+                      height: 202px
+                      background-size: 100% 100%
+                      margin-bottom: 20px
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                      &:hover:before, &:hover:before
+                        content: ''
+                        +background('lupa.png')
+                        background-size: 40px 40px
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
+                        postion: absolute
+                        left: 0
+                        top: 0
+                        background-color: rgba(0,0,0,0.6)
+
+
+            .carousel-item-text10
+              .content
+                .scroll 
+                  h3
+                    padding: 10px 0 25px 
+                  .content-image
+                    display: flex
+                    justify-content: space-around
+                    margin-bottom: 10px
+                    flex-wrap: wrap
+                    width: 90%
+                    max-width: 848px
+                    min-width: 100px
+                    margin: auto
+                    .image1
+                      +background('boi-boiada.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                      &:hover:before, &:hover:before
+                        content: ''
+                        +background('lupa.png')
+                        background-size: 40px 40px
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
+                        postion: absolute
+                        left: 0
+                        top: 0
+                        background-color: rgba(0,0,0,0.6)
+                    
+                    .image2
+                      +background('toda-crianca-do-mundo.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                      &:hover:before, &:hover:before
+                        content: ''
+                        +background('lupa.png')
+                        background-size: 40px 40px
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
+                        postion: absolute
+                        left: 0
+                        top: 0
+                        background-color: rgba(0,0,0,0.6)
+
+                    .image3
+                      +background('poemas-que-escolhi.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                      &:hover:before, &:hover:before
+                        content: ''
+                        +background('lupa.png')
+                        background-size: 40px 40px
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
+                        postion: absolute
+                        left: 0
+                        top: 0
+                        background-color: rgba(0,0,0,0.6)
+
+                    .image4
+                      +background('classificados-poeticos.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                      &:hover:before, &:hover:before
+                        content: ''
+                        +background('lupa.png')
+                        background-size: 40px 40px
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
+                        postion: absolute
+                        left: 0
+                        top: 0
+                        background-color: rgba(0,0,0,0.6)
+
+                    .image5
+                      +background('namorinho-de-portao.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                      &:hover:before, &:hover:before
+                        content: ''
+                        +background('lupa.png')
+                        background-size: 40px 40px
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
+                        postion: absolute
+                        left: 0
+                        top: 0
+                        background-color: rgba(0,0,0,0.6)
+                    
+                    .image6
+                      +background('exercicio-de-ser-crianca.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                      &:hover:before, &:hover:before
+                        content: ''
+                        +background('lupa.png')
+                        background-size: 40px 40px
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
+                        postion: absolute
+                        left: 0
+                        top: 0
+                        background-color: rgba(0,0,0,0.6)
+
+                    .image7
+                      +background('o-fazedor-de-amanhecer.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                      &:hover:before, &:hover:before
+                        content: ''
+                        +background('lupa.png')
+                        background-size: 40px 40px
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
+                        postion: absolute
+                        left: 0
+                        top: 0
+                        background-color: rgba(0,0,0,0.6)
+
+                    .image8
+                      +background('e-isso-ali.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                      &:hover:before, &:hover:before
+                        content: ''
+                        +background('lupa.png')
+                        background-size: 40px 40px
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
+                        postion: absolute
+                        left: 0
+                        top: 0
+                        background-color: rgba(0,0,0,0.6)
+
+
+            .carousel-item-text11
+              .content
+                .scroll 
+                  p
+                    padding: 10px 0 25px
+                  .content-image
+                    display: flex
+                    justify-content: space-around
+                    margin-bottom: 10px
+                    flex-wrap: wrap
+                    width: 90%
+                    max-width: 848px
+                    min-width: 100px
+                    margin: auto
+                    .image1
+                      +background('a-menina-dos-sonhos.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 175px
+                
+                      margin-bottom: 20px
+                      height: 253px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                      &:hover:before, &:hover:before
+                        content: ''
+                        +background('lupa.png')
+                        background-size: 40px 40px
+                        z-index: 1
+                        display: block
+                        width: 100%
+                        height: 100%
+                        postion: absolute
+                        left: 0
+                        top: 0
+                        background-color: rgba(0,0,0,0.6)
+
+            .carousel-item-text12
+              .content
+                .scroll 
+                  .box-content
+                    border: 2px solid #ffffff
+                    padding: 0 15px
+
+
+                    
+.btn-detail
+  border: #fff solid 1px
+  display: inline-block
+  font-size: 20px
+  padding: 3px
+  position: absolute
+  z-index: 900
+  cursor: pointer
+  margin: auto
+  width: 105px
+  text-align: center
+  p
+    padding: 5px
+  &:active
+    +crossBrowser(transform, scale(0.9))  
+  p
+    background: rgba(0,0,0,0.3)
+    color: #fff
+    padding: 3px 10px 3px 10px
+
+.peruglr-overlay
+  width: 100%
+  height: 100%
+  display: block
+  background: rgba(0,0,0,0.9)
+  z-index: 1000
+  position: absolute
+  padding: 20px
+  box-sizing: border-box
+
+  h3
+    font-family: NotoSans-Black, Arial, Helvetica, sans-serif
+    font-size: 30px
+    line-height: 40px
+    padding: 10px 0
+    span, strong
+      font-family: inherit
+      color: #EDEB64
+      font-size: inherit
+
+  .sub-title
+    font-size: 21px
+    line-height: 31px
+    strong
+      color: #EDEB64
+      font-size: inherit
+      
+  .text-img
+    width: 100%
+    height: 100%
+    width: 80%
+    margin: auto
+   
+    .vertical-align
+      height: 100%
+      .scroll
+        outline: 2px solid #fff
+        outline-offset: 15px
+
+        .content-image
+          display: flex
+          justify-content: space-evenly
+          margin: 20px 0
+          img
+            outline: 2px solid #fff
+            outline-offset: 5px
+
+  
+  .text
+    width: 100%
+    height: 100%
+    width: 80%
+    margin: auto
+    outline: 2px solid #fff
+    outline-offset: 15px
+    .vertical-align
+      height: 100%
+      .scroll
+        outline: 2px solid #fff
+        outline-offset: 15px
+
+
+  .image-information
+    width: 100%
+    height: 100%
+    width: 80%
+    margin: auto
+    h3
+      padding: 0 0 10px
+    .vertical-align
+      height: 100%
+      .scroll
+        max-width: 950px
+        margin: auto
+        width: 100%
+        outline: 2px solid #fff
+        outline-offset: 15px 
+        .content-image
+          display: flex
+          justify-content: space-evenly
+          margin-bottom: 10px
+          flex-wrap: wrap
+          width: 90%
+          max-width: 848px
+          min-width: 100px
+          margin: 20px auto
+          img
+            outline: 2px solid #fff
+            outline-offset: 5px 
+        
+        .box-overlay
+          margin-top: 30px
+          padding: 0 12px
+          border: 2px solid #fff
+          box-sizing: border-box
+          p
+            padding: 10px 0
+
+    
+
+
+  .list-cicle
+    li
+      display: -webkit-box
+      position: relative
+      padding: 5px 0 5px 35px
+      div
+        position: absolute
+        height: 12px !important
+        width: 12px !important
+        background-color: #fff
+        border-radius: 100%
+        margin: 17px 10px 
+        left: 0 
+      p
+        padding: 10px 0
+
+  .btn-close
+    right: 20px
+    top: 20px
+    left: initial
+    bottom: initial
+
+  p
+    padding: 10px 20px 
+  sup
+    vertical-align: super
+    font-size: smaller
+    color: #000
+
+  .img
+    img
+      margin: auto
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      outline: 2px solid #fff
+      outline-offset: 15px
+
+  
+  .overlay-img
+    margin: auto
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 80%
+
+    .vertical-align
+      height: 100%
+      display: -ms-flexbox
+      display: -webkit-flex
+      display: flex
+      -ms-flex-align: center
+      -webkit-align-items: center
+      -webkit-box-align: center
+      align-items: center
+      margin: auto
+      top: 0
+      bottom: 0
+      width: 100%
+      +crossBrowser(box-sizing, border-box)
+
+    .scroll
+      position: absolute
+      width: 100%
+      max-height: 90%
+      outline: 2px solid #fff
+      outline-offset: 15px
+      
+
+      .mCustomScrollBox
+        padding: 0 20px
+
+        .mCSB_container
+          margin: 0
+
+    .block-text
+      width: 78%
+      float: right
+      display: inline-block
+    .image
+    
+      top: 20px
+      margin-left: 15px
+      position: absolute
+      
+      background-size: 100% 100%
+      background-repeat: no-repeat
+      background-position: center
+      outline: solid 1px white
+      outline-offset: 5px
+ 
+
+     
+
+    .content-separator
+      height: 88%
+      width: 5px
+      top: 31px
+      position: absolute
+      display: inline-block 
+      left: 22%
+
+      div
+        position: relative
+        height: 50%
+        border-right: 1px solid white
+        margin-right: 4px
+
+      .separator-top
+        margin-bottom: 13px
+        margin-top: -13px
+
+        &:after
+          content: ''
+          height: 10px
+          border-right: 1px solid white
+          transform: rotate(-45deg)
+          display: block
+          position: absolute
+          bottom: -8px
+          left: 3.25px
+
+      .separator-bottom
+
+          &:before
+            content: ''
+            height: 10px
+            border-right: 1px solid white
+            transform: rotate(45deg)
+            display: block
+            position: absolute
+            left: 3.25px
+            top: -8px
+
+  .size-small
+    width: 17% 
+    background: transparent
+    &:before
+      display: none
+    p
+      color: #fff
+    text-align: center
+  
+  .text1
+    width: 80%
+    max-width: 1200px 
+    ul
+      li
+        list-style: none
+        position: relative
+        height: 68px
+        .list-border-radius
+         
+          width: 8px
+          height: 8px
+          border: 1px solid #000
+          border-radius: 8px
+          position: relative
+          background-color: #000    
+          display: inline-block    
+
+          &:after
+            content: ""
+            width: 15px
+            height: 15px
+            border-radius: 100%
+            border: 1px solid #000
+            position: absolute
+            top: 50%
+            left: 50%
+            margin-right: -50%
+            transform: translate(-50%, -50%) 
+
+        .position-inline
+          display: inline
+          position: absolute
+          padding: 0 10px 10px
+        
+   
+          
+
+
+  
+
+  // div
+  //   position: absolute
+  //   left: 0
+  //   top: 0
+  //   bottom: 0
+  //   right: 0
+  //   background: #ddd
+  //   width: 70%
+  //   margin: auto
+  //   height: fit-content
+ 
+  //   max-width: 50%
+  
+  // > div  
+  //   outline: 1px solid #ddd
+  //   outline-offset: 5px
+  //   &:before
+  //     //content: ''
+  //     border:  1px solid
+  //     width: calc(100% + 10px)
+  //     height: calc(100% + 10px)
+  //     position: absolute
+  //     top: -5px
+  //     left: -5px
+    
+  
+      
+    p
+      color: #000
+    //   line-height: 250%
+    //   padding-left: 50px
+    //   padding-right: 50px
+  
+  
+
+    .source
+        float: right
+    ul
+      padding: 20px
+      li
+        list-style-type: circle
+        color: #000
+      
+      
+      li.list-border-radiu
+        width: 3px
+        height: 3px
+        border: 1px solid #000
+        border-radius: 8px
+        position: relative
+        background-color: #000    
+        display: inline-block    
+
+        &:after
+          content: " "
+          width: 10px
+          height: 10px
+          border-radius: 100%
+          border: 1px solid #000
+          position: absolute
+          top: 50%
+          left: 50%
+          margin-right: -50%
+          transform: translate(-50%, -50%)         
+    
+  .btn-close
+    outline: 0px
+    
+    left: initial
+    bottom: initial
+    box-sizing: border-box
+    cursor: pointer
+    span
+      background: #fff !important
+
+.peruglr-carousel
+  .carousel-itens 
+    position: initial
+    //.carousel-item 
+  .carousel-navigation 
+    position: absolute
+    bottom: 0
+    width: 100%
+    ul 
+      display: flex
+      justify-content: center
+      li
+        display: inline-block
+        width: 40px
+        height: 40px
+        margin: 10px
+        background-color: transparent
+        p
+          border-radius: 40px
+          border: 1px #fff solid
+          line-height: 40px
+          font-size: 25px
+          margin: 0
+          padding: 0 
+          text-align: center
+        &.clicked
+          p
+            border: 1px #fff solid
+            border-radius: 40px
+            background-color: #fff 
+            color: #000
+        
+video
+  background: #000
+  width: 90%
+  height: 90%
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto

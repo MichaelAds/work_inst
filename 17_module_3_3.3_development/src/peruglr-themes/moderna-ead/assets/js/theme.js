@@ -24,7 +24,10 @@ var theme = {
             theme.resizeWindow();
         });
 
+        
     },
+
+        
 
     notes: function() {
 
@@ -207,7 +210,7 @@ var theme = {
             
         });
         theme.changePage();
-         $('.img-overlay').on('click',(e)=>{ peruglr.overlay( $(e.currentTarget).attr('img')); });
+        $('.img-overlay').on('click',(e)=>{ peruglr.overlay( $(e.currentTarget).attr('overlay')); });
 
         
         

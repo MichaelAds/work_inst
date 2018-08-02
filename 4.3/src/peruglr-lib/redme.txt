@@ -1,0 +1,4 @@
+Peruglr.js
+Author: Perugluglu Studios
+URL: http://libs.perugluglu.net/js/peruglr
+Created date: 31/01/2017

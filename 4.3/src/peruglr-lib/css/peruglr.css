@@ -1,0 +1,58 @@
+#peruglr {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  #peruglr.events-none, #peruglr.events-none * {
+    pointer-events: none; }
+  #peruglr #preloader {
+    width: 30%;
+    height: 30%;
+    max-width: 130px;
+    max-height: 130px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    -webkit-visibility: hidden;
+    -moz-visibility: hidden;
+    -o-visibility: hidden;
+    visibility: hidden; }
+    #peruglr #preloader div {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 100%;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-align: center;
+      -webkit-align-items: center; }
+      #peruglr #preloader div span {
+        text-align: center;
+        display: block;
+        width: 100%; }
+  #peruglr .clear {
+    clear: both; }
+  #peruglr .no-wrap {
+    white-space: nowrap; }
+  #peruglr section.page {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    #peruglr section.page .sequence-imgs {
+      width: inherit;
+      height: inherit;
+      position: relative; }
+      #peruglr section.page .sequence-imgs img {
+        width: inherit;
+        display: block; }
+
+/*# sourceMappingURL=peruglr.css.map */

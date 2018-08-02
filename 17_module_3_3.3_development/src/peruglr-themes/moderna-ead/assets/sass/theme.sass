@@ -23,7 +23,7 @@
     color: #fff
 
   strong
-    font-family: NotoSans-Medium, Arial, Helvetica, sans-serif
+    font-family: NotoSans-Medium, Arial, Helvetica, sans-serif 
 
     em
       font-family: NotoSans-MediumItalic, Arial, Helvetica, sans-serif
@@ -369,6 +369,60 @@
       max-width: 1200px
       margin: auto
 
+      .list-cicle
+        li
+          display: -webkit-box
+          position: relative
+          padding: 5px 0 5px 35px
+          div
+            position: absolute
+            height: 12px !important
+            width: 12px !important
+            background-color: #fff
+            border-radius: 100%
+            margin: 17px 10px 
+            left: 0 
+
+          .click
+            +background('click.svg')
+            width: 35px
+            height: 35px
+            display: inline-block
+       
+            transform: translateY(100%)
+            cursor: pointer
+
+      .separator-colum
+        position: relative
+        .colum-left
+          display: inline-block
+          width: 100%
+          min-width: 400px
+          max-width: 46%
+          margin-right: 55px
+          float: left
+
+        .colum-right
+          display: inline-block
+          width: 100%
+          min-width: 400px
+          max-width: 45%
+          float: left
+
+      .legend
+        text-align: center
+        p
+          display: inline-block
+
+        .click
+          +background('click.svg')
+          width: 30px
+          height: 30px
+          display: inline-block
+          margin-left: 10px 
+          transform: translateY(35%)
+          cursor: pointer
+
       .content
         position: absolute
 
@@ -538,67 +592,13 @@
                         color: #EDEB64
              
 
-    
-              .carousel-item-text3
-                .content
-                  .scroll
-                    h2
-                    
-                      strong
-                        
-                        color:#edeb64
-                    h3
-                    
-                      span
-                        
-                        color:#edeb64
-                        font-family: NotoSans-bold, Arial, Helvetica, sans-serif
-
-                    ul
-                      li
-                        display: -webkit-box
-                     
-                        padding: 5px 0
-                        .circle
-                          
-                          height: 15px !important
-                          width: 15px !important
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px 17px  
                         
                      
 
               .carousel-item-text4
                 .content
                   .scroll
-                    
-                    h2
                       
-                      strong
-                        
-                        color:#edeb64
-                    h3
-                     
-                      span
-                     
-                        color:#edeb64
-                        font-family: NotoSans-bold, Arial, Helvetica, sans-serif
-
-                    ul
-                      li
-                        padding: 5px 0
-                        display: -webkit-box
-                        div
-                   
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px
-                        
-                   
-                         
                     .note::before
                       content: ""
                       display: inline-block
@@ -614,92 +614,7 @@
                       border-right: 5px solid transparent
                       border-bottom: 5px solid #3a2b5e
 
-              .carousel-item-text5
-                .content
-                  .scroll
-                  
-                    h2
-                     
-                      strong
-                 
-                        color:#edeb64
-                    h3
-                    
-                      span
-            
-                        color:#edeb64
-                        font-family: NotoSans-bold, Arial, Helvetica, sans-serif
-
-                    ul
-                      li
-                        padding: 5px 0
-                        display: -webkit-box
-                        div
-                        
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px
-                        
-                      
-                         
-              .carousel-item-text6
-                .content
-                  .scroll
-                    h2
-                     
-                      strong
-                   
-                        color:#edeb64
-                    h4
-                    
-                      span
-              
-                        color:#edeb64
-                        font-family: NotoSans-bold, Arial, Helvetica, sans-serif
-
-                    ul
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                          display: inline-block
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px 
-                        
-                       
-
-              .carousel-item-text7
-                .content
-                  .scroll
-                   
-                    h2
-                    
-                      strong
-                        color:#edeb64
-                    h4
-                  
-                      span
-              
-                        color:#edeb64
-                        font-family: NotoSans-bold, Arial, Helvetica, sans-serif
-
-                    ul
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                          display: inline-block
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px
-                        
+           
                     
 
               
@@ -709,105 +624,18 @@
         .peruglr-carousel-a-leitura-de-livros-ilustrados-pt2
           .carousel-itens
             ul
-              .carousel-item-text1
-                .content
-                  .scroll
-                    h2
-                      strong
-                        color:#edeb64
-
-
-                    ul
-                      margin-left: 30px
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                        
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px 
-                        
-                      
-
+              
               .carousel-item-text2
                 .content
-                  .scroll
-                   
-                          
-                                
-              .carousel-item-text3
-                .content
-                  .scroll
-                    h2
+                  .scroll        
+                    p
                       strong
-                        color:#edeb64
-               
-
-                    ul
-                      li
-                        padding: 5px 0
-                        display: -webkit-box
-                        div
-                         
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px 
-
-              .carousel-item-text4
-                .content
-                  .scroll
-                    h2
-                      strong
-                        color:#edeb64
-                 
-                      h4
-                        font-family: NotoSans-Bold, Arial, Helvetica, sans-serif
-
-                    .separator-colum
-                      display: flex
-
-                    ul
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                        
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px 
-              
-
+                        color: #edeb64
+                      
               .carousel-item-text5
                 .content
                   .scroll
-                    h2
-                      padding: 0
-                      strong
-                        color:#edeb64
-                    h4
-                      font-family: NotoSans-Bold, Arial, Helvetica, sans-serif
-                      
-                    .separator-colum
-                      display: flex
-
-                    ul
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                       
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px
+                    
                     
                                    
               .carousel-item-text6
@@ -1091,112 +919,11 @@
                       color: #EDEB64
 
 
-              .carousel-item-text3
-                .content
-                  .scroll
-                    .small-text
-                      padding: 0
-                    h2
-                     
-                      strong
-                        color: #edeb64
-                 
-                    h5
-                      strong
-                        color: #fff
-                      font-family: NotoSans-bold, Arial, Helvetica, sans-serif
-                    
-                    .separator-colum
-                      display: flex
 
-                    ul
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                         
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px 
-
-              .carousel-item-text4
-                .content
-                  .scroll
-                    h2
-                      strong
-                        color:#edeb64
-                    h5
-                      font-family: NotoSans-bold, Arial, Helvetica, sans-serif
-                    
-                    .separator-colum
-                      display: flex
-
-                    ul
-                      li
-                        padding: 5px 0
-                        display: -webkit-box
-                        div
-                         
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px       
-
-              .carousel-item-text5
-                .content
-                  .scroll
-                    h5
-                      font-family: NotoSans-bold, Arial, Helvetica, sans-serif
-                    h2
-                      strong
-                        color: #edeb64
-                    
-                    p
-                      strong
-                        color: #fff
+            
                    
-                    
-                    .separator-colum
-                      display: flex
+              
 
-                    ul
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                         
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px 
-
-              .carousel-item-text6
-                .content
-                  .scroll
-                    h2
-                      strong
-                        color:#edeb64
-                    h4
-                      font-family: NotoSans-bold, Arial, Helvetica, sans-serif
-                    
-                    .separator-colum
-                      display: flex
-
-                    ul
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                          
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px
 
               .carousel-item-text7
                 .content
@@ -1323,32 +1050,9 @@
                       strong
                         color: #EDEB64
 
-              .carousel-item-text2
-                .content
-                  .scroll
-                    h2
-                      strong
-                        color:#edeb64
-                    h3
-                      strong
-                        color:#edeb64
+              
 
-                    ul
-                      width: 80%
-                      margin: auto
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                         
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 7px 10px 7px 0
-                        
-                        p
-                          padding: 0px 
+                 
 
               .carousel-item-text3
                 .content
@@ -1460,32 +1164,9 @@
                       strong
                         color: #EDEB64
 
-              .carousel-item-text4
-                .content
-                  .scroll
-                    h2
-                      strong
-                        color:#edeb64
-                    h3
-                      strong
-                        color:#edeb64
+              
 
-                    ul
-                      width: 80%
-                      margin: auto
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                         
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 7px 10px 7px 0
-                        
-                        p
-                          padding: 0px 
+                   
 
               .carousel-item-text5
                 .content
@@ -1504,7 +1185,7 @@
                         +background('sam-e-dave.svg')
                         width: 107px
                         height: 141px
-                        top: 0
+                        top: 6px
                     
                         margin: auto
                         position: absolute
@@ -1533,7 +1214,7 @@
 
                     .content-separator
                       height: 49%
-                      top: 17px
+                      top: 25px
                       width: 5px
                       position: absolute
                       display: inline-block 
@@ -1603,27 +1284,12 @@
               .carousel-item-text7
                 .content
                   .scroll
-                   
-                    h2
-                     
-                      strong
-                        color:#edeb64
-                    h3
-                      
-                      strong
+                  
+                    p
+                      em
                         color:#edeb64
 
-                    ul
-                 
-                      li
-                        display: -webkit-box
-                        padding: 5px 
-                        div
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px
+                   
 
     &.page-a-leitura-de-textos-mais-longos
       +background('a-leitura-de-textos-mais-longos.jpg')
@@ -1670,7 +1336,7 @@
                         +background('contos-de-anderson.svg')
                         width: 107px
                         height: 141px
-                        top: 6px
+                        top: 20px
                     
                         margin: auto
                         position: absolute
@@ -1698,7 +1364,7 @@
                         +background('contos-grim.svg')
                         width: 107px
                         height: 141px
-                        top: 6px
+                        top: 20px
                     
                         margin: auto
                         position: absolute
@@ -1796,24 +1462,13 @@
               .carousel-item-text3
                 .content
                   .scroll   
-                    max-width: 600px
+                    max-width: 500px
           
               .carousel-item-text4
                 .content
                   .scroll   
                    
-                    ul
-                     
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                         
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px 
+                    
                     
                     .content-img
                       display: flex
@@ -1874,18 +1529,7 @@
                 .content
                   .scroll   
                    
-                    ul
-                     
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                         
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px 
+                   
                     
                     .content-img
                       display: flex
@@ -1942,59 +1586,8 @@
                           top: 0
                           background-color: rgba(0,0,0,0.6)
 
-              .carousel-item-text6
-                .content
-                  .scroll   
-                    
-                    h4
-                      font-family: NotoSans-bold, Arial, Helvetica, sans-serif
 
-
-                    ul
-                    
-                    li
-                      display: -webkit-box
-                      padding: 5px 0
-                      div
-                        
-                        height: 15px
-                        width: 15px
-                        background-color: #fff
-                        border-radius: 100%
-                        margin: 17px 10px 
-              .carousel-item-text7
-                .content
-                  .scroll   
-                    
-                    ul
-                     margin-left: 30px
-                    li
-                      display: -webkit-box
-                      padding: 5px 0
-                      div
-                        
-                        height: 15px
-                        width: 15px
-                        background-color: #fff
-                        border-radius: 100%
-                        margin: 17px 10px 
-
-              .carousel-item-text8
-                .content
-                  .scroll   
-                    
-                    ul
-                   
-                    li
-                      display: -webkit-box
-                      padding: 5px 0
-                      div
-                        
-                        height: 15px
-                        width: 15px
-                        background-color: #fff
-                        border-radius: 100%
-                        margin: 17px 10px
+             
 
 
     &.page-outras-leituras-de-classicos
@@ -2136,20 +1729,6 @@
                       strong
                         color: #EDEB64
 
-              .carousel-item-text3
-                .content
-                  .scroll       
-                    ul
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                          
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px
 
               .carousel-item-text4
                 .content
@@ -2260,27 +1839,7 @@
                     p
                       strong
                         color: #EDEB64
-              .carousel-item-text5
-                .content
-                  .scroll  
-                    max-width: 950px
-                    left: 0
-                    right: 0
-                    margin: auto
-                    h4
-                      font-family: NotoSans-bold, Arial, Helvetica, sans-serif
-                    
-                    ul
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                          
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px
+              
 
               .carousel-item-text6
                 .content
@@ -2290,71 +1849,28 @@
                     right: 0
                     margin: auto
 
-
-              .carousel-item-text7
-                .content
-                  .scroll  
-                    ul
-                        li
-                          display: -webkit-box
-                          padding: 5px 0
-                          div
-                            
-                            height: 15px
-                            width: 15px
-                            background-color: #fff
-                            border-radius: 100%
-                            margin: 17px 10px
-                    h4
-                      font-family: NotoSans-bold, Arial, Helvetica, sans-serif   
+  
 
               .carousel-item-text8
                 .content
                   .scroll  
-                    ul
-                      margin-left: 15px
-                      li
-                        display: -webkit-box
-                        padding: 5px 0
-                        div
-                          
-                          height: 15px
-                          width: 15px
-                          background-color: #fff
-                          border-radius: 100%
-                          margin: 17px 10px
-                    h4
-                      font-family: NotoSans-bold, Arial, Helvetica, sans-serif   
+                     
                     
                     .image
                       +background('mapa.svg')
-                      width: 185px
-                      height: 94px
+                      width: 265px
+                      height: 134px
                       background-size: 100% 100%
                       background-repeat: no-repeat
                       background-position: center
                       outline: solid 1px white
                       outline-offset: 5px
+                      margin: 0 0 20px 20px
                       cursor: pointer !important
-                      right: 10px
-                      position: absolute
-                      top: 30px
+                      display: inline-block
 
 
-              .carousel-item-text9
-                .content
-                  .scroll  
-                    ul
-                        li
-                          display: -webkit-box
-                          padding: 5px 0
-                          div
-                            
-                            height: 15px
-                            width: 15px
-                            background-color: #fff
-                            border-radius: 100%
-                            margin: 17px 10px 
+            
                      
 
               .carousel-item-text10
@@ -2413,15 +1929,19 @@
               .carousel-item-text3
                 .content
                   .scroll 
+                    h4
+                      padding: 10px 0 25px
                     .content-image
                       display: flex
                       justify-content: space-around
                       margin-bottom: 10px
+                      flex-wrap: wrap
                       .image1
                         +background('assim-assado.svg')
                         width: 184px
                         height: 211px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2433,6 +1953,7 @@
                         width: 184px
                         height: 211px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2444,6 +1965,7 @@
                         width: 184px
                         height: 211px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2455,6 +1977,7 @@
                         width: 184px
                         height: 211px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2467,15 +1990,19 @@
               .carousel-item-text4
                 .content
                   .scroll 
+                    h4
+                      padding: 10px 0 25px
                     .content-image
                       display: flex
                       justify-content: space-around
                       margin-bottom: 10px
+                      flex-wrap: wrap
                       .image1
                         +background('historia-engatada.svg')
                         width: 211px
                         height: 211px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2487,6 +2014,7 @@
                         width: 211px
                         height: 211px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2498,6 +2026,7 @@
                         width: 211px
                         height: 211px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2508,15 +2037,19 @@
               .carousel-item-text5
                 .content
                   .scroll 
+                    h4
+                      padding: 10px 0 25px
                     .content-image
                       display: flex
                       justify-content: space-around
                       margin-bottom: 10px
+                      flex-wrap: wrap
                       .image1
                         +background('era-uma-vez-um-caracol.svg')
                         width: 211px
                         height: 211px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2528,6 +2061,7 @@
                         width: 180px
                         height: 211px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2539,6 +2073,7 @@
                         width: 170px
                         height: 211px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2548,15 +2083,19 @@
               .carousel-item-text6  
                 .content
                   .scroll 
+                    h4
+                      padding: 10px 0 25px
                     .content-image
                       display: flex
                       justify-content: space-evenly
                       margin-bottom: 10px
+                      flex-wrap: wrap
                       .image1
                         +background('enrosca-ou-desenrosca.svg')
                         width: 180px
                         height: 211px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2568,6 +2107,7 @@
                         width: 180px
                         height: 211px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2577,15 +2117,19 @@
               .carousel-item-text7
                 .content
                   .scroll 
+                    h4
+                      padding: 10px 0 25px
                     .content-image
                       display: flex
                       justify-content: space-evenly
                       margin-bottom: 10px
+                      flex-wrap: wrap
                       .image1
                         +background('arara.svg')
                         width: 180px
                         height: 180px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
@@ -2597,14 +2141,249 @@
                         width: 180px
                         height: 180px
                         background-size: 100% 100%
+                        margin-bottom: 20px
                         background-repeat: no-repeat
                         background-position: center
                         outline: solid 1px white
                         outline-offset: 5px
                         cursor: pointer !important
-            
 
-                        
+            .carousel-item-text8
+                .content
+                  .scroll 
+                    h4
+                      padding: 10px 0 25px
+                    .content-image
+                      display: flex
+                      justify-content: center
+                      margin-bottom: 10px
+                      flex-wrap: wrap
+                      .image1
+                        +background('um-gato.svg')
+                        width: 180px
+                        height: 180px
+                        background-size: 100% 100%
+                        margin-bottom: 20px
+                        background-repeat: no-repeat
+                        background-position: center
+                        outline: solid 1px white
+                        outline-offset: 5px
+                        cursor: pointer !important
+                      
+            .carousel-item-text9
+              .content
+                .scroll 
+                  h4
+                    padding: 10px 0 25px
+                  .content-image
+                    display: flex
+                    justify-content: space-evenly
+                    margin-bottom: 10px
+                    flex-wrap: wrap
+                    .image1
+                      +background('familia.svg')
+                      width: 163px
+                      height: 202px
+                      background-size: 100% 100%
+                      margin-bottom: 20px
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                    
+                    .image2
+                      +background('oito-anos.svg')
+                      width: 163px
+                      height: 202px
+                      background-size: 100% 100%
+                      margin-bottom: 20px
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+
+
+            .carousel-item-text10
+              .content
+                .scroll 
+                  h3
+                    padding: 10px 0 25px 
+                  .content-image
+                    display: flex
+                    justify-content: space-around
+                    margin-bottom: 10px
+                    flex-wrap: wrap
+                    width: 90%
+                    max-width: 848px
+                    min-width: 100px
+                    margin: auto
+                    .image1
+                      +background('boi-boiada.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                    
+                    .image2
+                      +background('toda-crianca-do-mundo.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+
+                    .image3
+                      +background('poemas-que-escolhi.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+
+                    .image4
+                      +background('classificados-poeticos.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+
+                    .image5
+                      +background('namorinho-de-portao.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+                    
+                    .image6
+                      +background('exercicio-de-ser-crianca.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+
+                    .image7
+                      +background('o-fazedor-de-amanhecer.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+
+                    .image8
+                      +background('e-isso-ali.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 171px
+                      max-height: 618px
+                      min-height: 100px
+                      margin-bottom: 30px
+                      height: 211px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+
+
+            .carousel-item-text11
+              .content
+                .scroll 
+                  h4
+                    padding: 10px 0 25px
+                  .content-image
+                    display: flex
+                    justify-content: space-around
+                    margin-bottom: 10px
+                    flex-wrap: wrap
+                    width: 90%
+                    max-width: 848px
+                    min-width: 100px
+                    margin: auto
+                    .image1
+                      +background('a-menina-dos-sonhos.svg')
+                      width: 280px
+                      min-width: 100px
+                      max-width: 175px
+                
+                      margin-bottom: 20px
+                      height: 253px
+                      background-size: 100% 100%
+                      background-repeat: no-repeat
+                      background-position: center
+                      outline: solid 1px white
+                      outline-offset: 5px
+                      cursor: pointer !important
+
+            .carousel-item-text12
+              .content
+                .scroll 
+                  .box-content
+                    border: 2px solid #ffffff
+                    padding: 0 15px
+
 
                     
 .btn-detail
@@ -2680,16 +2459,101 @@
     
   .img-text4
     max-width: 50%
-  .img-overlay
-    background: transparent
-    outline: none
-    img
+  .overlay-img
+    margin: auto
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 90%
+
+    .vertical-align
+      display: -ms-flexbox
+      display: -webkit-flex
+      display: flex
+      -ms-flex-align: center
+      -webkit-align-items: center
+      -webkit-box-align: center
+      align-items: center
       margin: auto
-      position: absolute
-      left: 0
-      right: 0
       top: 0
       bottom: 0
+      width: 100%
+      +crossBrowser(box-sizing, border-box)
+
+    .scroll
+      position: absolute
+      width: 100%
+      max-height: 90%
+      
+
+      .mCustomScrollBox
+        padding: 0 20px
+
+        .mCSB_container
+          margin: 0
+
+    .block-text
+      width: 65%
+      height: 160px
+      display: inline-block
+    .image
+      +background('cinderela-das-bonecas.svg')
+      width: 96px
+      height: 147px
+      top: 55px
+
+      position: absolute
+      left: 78%
+      background-size: 100% 100%
+      background-repeat: no-repeat
+      background-position: center
+      outline: solid 1px white
+      outline-offset: 5px
+      cursor: pointer !important
+
+     
+
+    .content-separator
+      height: 31%
+      width: 5px
+      top: 77px
+      position: absolute
+      display: inline-block 
+      left: 70%
+
+      div
+        position: relative
+        height: 50%
+        border-right: 1px solid white
+        margin-right: 4px
+
+      .separator-top
+        margin-bottom: 13px
+        margin-top: -13px
+
+        &:after
+          content: ''
+          height: 10px
+          border-right: 1px solid white
+          transform: rotate(-45deg)
+          display: block
+          position: absolute
+          bottom: -8px
+          left: 3.25px
+
+      .separator-bottom
+
+          &:before
+            content: ''
+            height: 10px
+            border-right: 1px solid white
+            transform: rotate(45deg)
+            display: block
+            position: absolute
+            left: 3.25px
+            top: -8px
 
   .size-small
     width: 17% 
@@ -2735,90 +2599,36 @@
           position: absolute
           padding: 0 10px 10px
         
-  .text3
-    width: 80%
-    max-width: 1200px 
-    ul
-      li
-        list-style: none
-        position: relative
-        height: 30px
-        .list-border-radius
-         
-          width: 8px
-          height: 8px
-          border: 1px solid #000
-          border-radius: 8px
-          position: relative
-          background-color: #000    
-          display: inline-block    
-
-          &:after
-            content: ""
-            width: 15px
-            height: 15px
-            border-radius: 100%
-            border: 1px solid #000
-            position: absolute
-            top: 50%
-            left: 50%
-            margin-right: -50%
-            transform: translate(-50%, -50%) 
-
-        .position-inline
-          display: inline
-          position: absolute
-          padding: 0 10px 10px  
+   
+          
 
 
-  .dica
-    max-width: 30%
-    h2
-      color: #000
-      font-size: 26px
-
-  .size-img
-    width: 25% 
-    background: transparent
-    &:before
-      display: none
-    p
-      color: #fff
-    text-align: center
-      font-size: 30px
-
-  .size-large
-    max-width: 80% 
-    &:before
-      display: none
-
-  .text-quote
-    font-size: 65px    
-
-  div
-    position: absolute
-    left: 0
-    top: 0
-    bottom: 0
-    right: 0
-    background: #ddd
-    width: 70%
-    margin: auto
-    height: fit-content
- 
-    max-width: 50%
   
-  > div  
-    outline: 1px solid #ddd
-    outline-offset: 5px
-    &:before
-      //content: ''
-      border:  1px solid
-      width: calc(100% + 10px)
-      height: calc(100% + 10px)
-      position: absolute
-      top: -5px
-      left: -5px
+
+  // div
+  //   position: absolute
+  //   left: 0
+  //   top: 0
+  //   bottom: 0
+  //   right: 0
+  //   background: #ddd
+  //   width: 70%
+  //   margin: auto
+  //   height: fit-content
+ 
+  //   max-width: 50%
+  
+  // > div  
+  //   outline: 1px solid #ddd
+  //   outline-offset: 5px
+  //   &:before
+  //     //content: ''
+  //     border:  1px solid
+  //     width: calc(100% + 10px)
+  //     height: calc(100% + 10px)
+  //     position: absolute
+  //     top: -5px
+  //     left: -5px
     
   
       
